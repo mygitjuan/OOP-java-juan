@@ -1,8 +1,8 @@
 package src.es.netmind.maquinacafe;
 
-import es.netmind.maquinacafe.modelos.tazacafe.Corto;
-import es.netmind.maquinacafe.modelos.tazacafe.Largo;
-import es.netmind.maquinacafe.modelos.tazacafe.TazaCafe;
+import src.es.netmind.maquinacafe.modelos.tazacafe.Corto;
+import src.es.netmind.maquinacafe.modelos.tazacafe.Largo;
+import src.es.netmind.maquinacafe.modelos.tazacafe.TazaCafe;
 
 public class Main {
 
