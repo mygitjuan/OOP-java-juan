@@ -16,7 +16,7 @@ public class Main {
             try {
                 procesarArgumentos(args);
             } catch (NumberFormatException e) {
-                System.out.println("⚠ LOS IDENTIFICADORES DE CLIENTE {uid}, CUENTA {aid} Y PRÉSTAMOS {lid} DEBEN SER NÚMEROS ⚠");
+                System.out.println("⚠ LOS-IDENTIFICADORES DE CLIENTE {uid}, CUENTA {aid} Y PRÉSTAMOS {lid} DEBEN SER NÚMEROS ⚠");
                 mostrarInstrucciones();
             } catch (Exception e) {
                 System.out.println("⚠ HA HABIDO UN ERROR... CONTACTE CON EL ADMINISTRADOR ⚠");
