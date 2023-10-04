@@ -14,7 +14,11 @@ public class Main {
 
         if (args != null && args.length >= 2) {
             try {
+                System.out.println("Introduzca usuario");
+
+
                 procesarArgumentos(args);
+
             } catch (NumberFormatException e) {
                 System.out.println("⚠ LOS-IDENTIFICADORES DE CLIENTE {uid}, CUENTA {aid} Y PRÉSTAMOS {lid} DEBEN SER NÚMEROS ⚠");
                 mostrarInstrucciones();
@@ -27,9 +31,21 @@ public class Main {
 
     }
 
+    private static boolean procesarUsuarioArgs(String arg0){
+
+        String arg_aux = arg0;
+
+        if (arg_aux == "gestor") {
+            return true; }
+        else return false;
+
+    };
+
     private static void procesarArgumentos(String[] args) {
         int argsLength = args.length;
         String arg0 = args[0].toLowerCase();
+        boolean valido =procesarUsuarioArgs(arg0);
+        if (valido) {arg0 = "clients";}
         String arg1 = args[1].toLowerCase();
         String arg2 = argsLength > 2 ? args[2].toLowerCase() : null;
 
